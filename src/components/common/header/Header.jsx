@@ -19,7 +19,7 @@ const Header = () => {
       <header>
         <div className="container flex">
           <div className="logo-img">
-            <Link to='/'>
+            <Link onClick={() => closeMenu()} to='/'>
               <img src="../images/logo.png" alt="rentup - logo" />
             </Link>
           </div>
