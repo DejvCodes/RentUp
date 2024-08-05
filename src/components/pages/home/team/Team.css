@@ -1,0 +1,79 @@
+.team .team-cards .box {
+  width: 100%;
+  background: var(--white-color);
+  border-radius: 5px;
+  border: 1px solid rgba(62, 28, 131, 0.1);
+  transition: all 0.3s;
+  padding: 50px 40px 30px 40px;
+}
+.team .team-cards .box:hover {
+  box-shadow: 0 0 10px 10px rgba(112, 121, 138, 0.1);
+}
+.team .team-cards .details {
+  text-align: center;
+}
+.team .team-cards .details .img {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.team .team-cards .details .img img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.team .team-cards .details .img::after {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 110px;
+  height: 110px;
+  border: 5px solid #edf0f5;
+  border-radius: 50%;
+}
+.team .team-cards .details .img i {
+  position: absolute;
+  top: 40px;
+  right: -10px;
+  color: #108be7;
+  background: var(--black-color);
+  border-radius: 50%;
+  padding: 2px;
+  z-index: 1;
+}
+.team .team-cards .details i {
+  margin-right: 5px;
+}
+.team .team-cards .details ul {
+  margin-top: 5px;
+}
+.team .team-cards .details ul li {
+  background: #e7e8eb;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  margin: 10px;
+  cursor: pointer;
+}
+.team .team-cards .details ul li:hover {
+  padding-bottom: 10px;
+}
+.team .team-cards .details ul li i {
+  margin-left: 3px;
+}
+.team .team-cards .details button {
+  width: 100%;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+/* ---------- Responsive Design ---------- */
+@media screen and (max-width: 550px) {
+  .team .team-cards .box {
+    padding: 50px 20px 30px 20px;
+  }
+}

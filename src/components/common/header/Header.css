@@ -1,0 +1,121 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: var(--white-color);
+  box-shadow: 0 7px 30px rgba(0, 22, 84, 0.15);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+header .container .logo-img {
+  width: 170px;
+  cursor: pointer;
+}
+header .container .navigation ul.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+header .container .navigation ul.nav-menu li a {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s;
+  padding-inline: 5px;
+}
+header .container .navigation ul.nav-menu li a.active {
+  color: var(--light-green);
+}
+header .container .navigation ul.nav-menu li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--light-green);
+  transition: all 0.2s ease-out, left 0.2s ease-out;
+}
+header .container .navigation ul.nav-menu li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+header .container .menu-button h4 {
+  font-weight: 500;
+  margin-right: 15px;
+} 
+header .container .menu-button h4 span {
+  color: var(--white-color);
+  background: var(--light-green);
+  font-weight: 400;
+  border-radius: 100px;
+  padding: 0 7px;
+}
+header .container .toogle-btn {
+  display: none;
+}
+header .container .toogle-btn i {
+  color: var(--white-color);
+}
+
+/* ---------- Responsive Design ---------- */
+@media screen and (max-width: 1550px) {
+  header {
+    height: 70px;
+  }
+  header .container .logo-img {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  header .container .menu-button {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  header {
+    height: 60px;
+  }
+  header .container .logo-img {
+    width: 140px;
+    margin-top: 5px;
+  }
+  header .container .navigation ul.nav-menu {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 680px) {
+  header .container .navigation ul.nav-menu {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #e1e1e1;
+    flex-direction: column;
+    gap: 27px;
+    transition: all 0.4s;
+    padding-top: 27px;
+  }
+  header .container .navigation ul.nav-menu.show {
+    top: 58px;
+    height: 300px;
+    opacity: 1;
+  }
+  header .container .navigation ul.nav-menu.hide {
+    top: -300px;
+    height: 0;
+    opacity: 0;
+  }
+  header .container .toogle-btn {
+    display: inline;
+  }
+  header .container .toogle-btn button {
+    font-size: 22px;
+    border-radius: 5px;
+    padding: 8px 13px 7px 13px;
+  }
+}
