@@ -1,0 +1,53 @@
+.pricing .price-card {
+  grid-gap: 70px;
+}
+.pricing .price-card .box {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+}
+.pricing .price-card .box h3 {
+  font-size: 18px;
+}
+.pricing .price-card .box h1.price {
+  font-size: 45px;
+}
+.pricing .price-card .box h1.price span {
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 4px;
+}
+.pricing .price-card ul {
+  margin: 30px 0;
+}
+.pricing .price-card ul li {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.pricing .price-card label {
+  font-size: 14px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.pricing .price-card .box button {
+  width: 100%;
+  font-size: 18px;
+  border-radius: 50px;
+  transition: transform 0.3s;
+}
+.pricing .price-card .box button:hover {
+  transform: scale(1.03);
+}
+
+/* ---------- Responsive Design ---------- */
+@media screen and (max-width: 1250px) {
+  .pricing .price-card {
+    grid-gap: 30px;
+  }
+}

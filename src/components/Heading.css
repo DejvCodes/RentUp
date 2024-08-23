@@ -1,0 +1,21 @@
+.heading {
+  text-align: center;
+  margin: auto;
+}
+.heading h1 {
+  color: var(--title-color);
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+.heading p {
+  color: var(--subtitle-color);
+}
+
+/* ---------- Responsive Design ---------- */
+@media screen and (max-width: 500px) {
+  .heading h1 {
+    font-size: 30px;
+  }
+}

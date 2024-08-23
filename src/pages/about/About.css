@@ -1,0 +1,41 @@
+.about-content .container {
+  gap: 100px;
+}
+.about-content .container .left {
+  max-width: 550px;
+}
+.about-content .container .left .heading {
+  text-align: left;
+  margin-bottom: 25px;
+}
+.about-content .container .left p {
+  margin-bottom: 14px;
+}
+.about-content .container .left button.button {
+  border-radius: 50px;
+  transition: transform 0.3s;
+  margin-top: 10px;
+}
+.about-content .container .left button.button:hover {
+  transform: scale(1.05);
+}
+.about-content .container .left button.button a {
+  color: var(--white-color);
+  font-size: 16px;
+  padding: 16px 20px;
+}
+
+/* ---------- Responsive Design ---------- */
+@media screen and (max-width: 1250px) {
+  .about-content .container {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .about-content .container.flex {
+    flex-direction: column;
+  }
+  .about-content .container .left {
+    max-width: unset;
+  }
+}
