@@ -1,0 +1,121 @@
+.footer-content {
+  background: var(--light-green);
+  padding: 40px 0;
+}
+.footer-content .contact-us {
+  color: var(--white-color);
+  gap: 10px;
+}
+.footer-content .contact-us h1 {
+  font-size: 34px;
+} 
+.footer-content .contact-us p {
+  font-size: 16px;
+} 
+.footer-content .contact-us button {
+  padding: unset;
+}
+.footer-content .contact-us .button {
+  transition: transform 0.3s;
+}
+.footer-content .contact-us .button:hover {
+  transform: scale(1.05);
+}
+.footer-content .contact-us .button a {
+  color: var(--light-green);
+  background: var(--white-color);
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 5px solid #27ae601f;
+  padding: 15px 30px;
+}
+footer {
+  width: 100%;
+  background: var(--footer-bg);
+  color: var(--white-color);
+}
+footer .container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+}
+footer .container .left-box {
+  width: 50%;
+}
+footer .container .left-box h2 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+footer .container .left-box p {
+  font-size: 16px;
+  line-height: 22px;
+}
+footer .container .right-box {
+  display: flex;
+  align-items: center;
+}
+footer .container .right-box input {
+  width: 300px;
+  height: 48px;
+  background: var(--white-color);
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 5px;
+}
+footer .container .right-box button {
+  font-size: 16px;
+  border-radius: 5px;
+}
+.copyright {
+  text-align: center;
+  background: var(--footer-bg);
+  color: rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+}
+
+
+/* ---------- Responsive Design ---------- */
+@media screen and (max-width: 900px) {
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  footer .container .left-box {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .footer-content {
+    padding: 30px 0 55px 0;
+  }
+  .contact-us {
+    text-align: center;
+  }
+  .contact-us.flex {
+    flex-direction: column;
+  }
+  .footer-content .contact-us .button {
+    margin-top: 30px;
+  }
+  footer .container {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .footer-content .contact-us h1 {
+    font-size: 30px;
+  } 
+  footer .container .right-box input {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 360px) {
+  footer .container .right-box input {
+    width: 150px;
+  }
+}

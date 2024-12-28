@@ -1,0 +1,54 @@
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-section form {
+  border-radius: 5px;
+  padding: 30px;
+}
+.contact-section form h4 {
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.contact-section form div {
+  display: flex;
+  flex-direction: row;
+}
+.contact-section form div input[type="text"] {
+  margin-right: 20px;
+}
+.contact-section textarea {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.contact-section input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+/* ---------- Responsive Design ---------- */
+@media screen and (max-width: 500px) {
+  .contact-section form {
+    padding: 20px;
+  }
+  .contact-section form h4 {
+    margin-bottom: 15px;
+  }
+  .contact-section input {
+    margin-bottom: 10px;
+  }
+  .contact-section textarea {
+    margin-bottom: 15px;
+  }
+  .contact-section form div {
+    flex-direction: column;
+  }
+}
